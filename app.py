@@ -15,6 +15,6 @@ def index():
     response.content_type = 'text/plain; charset=utf-8'
     
 
-    return "<h1>5087</h1>"
+    return '''<h1 id="random"></h1><script>document.getElementById("random").innerHTML=Math.random()*10;</script>'''
 
 bottle.run(host='0.0.0.0', port=argv[1])
