@@ -12,7 +12,6 @@ bottle.debug(True)
 
 @get('/')
 def index():
-    response.content_type = 'text/plain; charset=utf-8'
     
 
     return '''<h1 id="random"></h1><script>document.getElementById("random").innerHTML=Math.random()*10;</script>'''
